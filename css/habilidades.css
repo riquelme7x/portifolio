@@ -1,0 +1,82 @@
+.habilidades {
+    /* background: var(--p8); */
+    background-image: linear-gradient(to bottom, #1a012e, #19012c, #170129, #160127, #140124);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 80px;
+    position: relative;
+    /* gap: 80px; */
+    color: var(--p2);
+}
+
+.habilidades h2 {
+    font-family: "Dm sans";
+    font-size: 4rem;
+    /* position: relative; */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+    /* margin-bottom: 70px; */
+}
+
+.habilidades h2::after {
+    content: "HABILIDADES";
+    /* text-align: center; */
+    position: absolute;
+    font-size: 8rem;
+    opacity: 0.06;
+    font-weight: 900;
+    font-family: "Poppins";
+
+}
+
+.habilidades .item {
+    margin: 30px 0px;
+}
+
+.texto-hab {
+    width: 40ch;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.skills .skills-item {
+    background: var(--p6);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skills-item :first-child {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.skills-item .skills-titulo {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.skills-corpo {
+    font-size: .8rem;
+
+}
+
+.habilidades .star {
+    width: 100px;
+}

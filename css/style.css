@@ -1,0 +1,23 @@
+/* Css de coisas globais */
+@import url("./global.css");
+
+/* Estilização do aside - menu ao lado */
+@import url("./aside.css");
+
+/* inicio */
+@import url("./inicio.css");
+
+/* Parte sobre mim */
+@import url("../css/sobre-mim.css");
+
+/* Parte de oque faço */
+@import url("./oqfaco.css");
+
+/* parte de projetos */
+@import url("../css/projetos.css");
+
+/* Parte de habilidades */
+@import url("../css/habilidades.css");
+
+/* Parte de contato */
+@import url("./contato.css");

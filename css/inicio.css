@@ -1,0 +1,31 @@
+.inicio {
+    margin-left: 260px;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.inicio img {
+    z-index: -1;
+    height: 100vh;
+    position: absolute;
+    opacity: .2;
+    width: 100%;
+}
+
+.inicio div h1 {
+    font-family: "Dm sans";
+    font-size: 6rem;
+    line-height: 1.2;
+}
+
+.inicio div span {
+    color: var(--e3);
+}
+
+.incio div p {
+    font-size: 3rem;
+}

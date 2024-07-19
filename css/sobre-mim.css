@@ -1,0 +1,100 @@
+.sobre-mim {
+    background-image: linear-gradient(to bottom, #848099, #7a738f, #716685, #695a7b, #614d70);
+    /* background: var(--p5); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 80px;
+}
+
+.sobre-mim h2 {
+    font-family: "Dm sans";
+    font-size: 4rem;
+    /* position: relative; */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+    /* margin-bottom: 70px; */
+}
+
+
+.sobre-mim h2::after {
+    content: "SOBRE MIM";
+    /* text-align: center; */
+    position: absolute;
+    font-size: 8rem;
+    opacity: 0.06;
+    font-weight: 900;
+    font-family: "Poppins";
+
+}
+
+.item {
+    width: 60px;
+    height: 2px;
+    background: var(--e3);
+}
+
+.sobre-mim .in-date {
+    color: var(--p8);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* margin-top: 70px; */
+}
+
+.sobre-mim .in-date p {
+    /* background: #000; */
+    width: 60ch;
+    font-size: 1.1rem;
+}
+
+.sobre-mim .in-date p span {
+    font-size: 2.5rem;
+}
+
+.sobre-mim .in-date .Raoni {
+    color: var(--e3);
+}
+
+.in-date ul {
+    /* background: var(--p3); */
+    padding: 20px 15px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.in-date ul li {
+    padding: 10px 0px;
+    display: flex;
+    gap: 4px;
+}
+
+.in-date ul li span {
+    font-weight: bold;
+}
+
+.in-date ul li+li {
+    border-top: 2px solid black;
+
+}
+
+.in-date ul li a {
+    color: var(--e3);
+}
+
+.sobre-mim .btn-global {
+    background: var(--p2);
+    transition: .1s ease-in-out;
+}
+
+.sobre-mim .btn-global:hover {
+    background: var(--p7);
+    color: var(--e3);
+}
