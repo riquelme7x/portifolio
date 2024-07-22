@@ -7,11 +7,17 @@
     <title>Raoni Riquelme | Front end</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./icones/fav.svg" type="image/svg+xml>
+    <link rel=" preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="nav-mobile">
+        <img src="./icones/hamburger.png" alt="">
+        <img src="/icones/darkmode.svg" alt="">
+    </div>
     <nav class="nav">
         <div>
             <img src="./imagens/profile-pic.png" alt="">
@@ -19,12 +25,12 @@
         </div>
         <div class="traco"> </div>
         <ul class="nav-lista">
-            <li><a href="#inicio" class="active link ">Ínicio</a></li>
-            <li><a href="#sobre-mim" class="link">Sobre mim</a></li>
-            <li><a href="#oque-faco" class="link">O que eu faço?</a></li>
-            <li><a href="#projetos" class="link">Meus projetos</a></li>
-            <li><a href="#habilidades" class="link">Habilidades</a></li>
-            <li><a href="#contato" class="link">Contato</a></li>
+            <li><a href="#inicio" class="active link js-link">Ínicio</a></li>
+            <li><a href="#sobre-mim" class="link js-link">Sobre mim</a></li>
+            <li><a href="#oque-faco" class="link js-link">O que eu faço?</a></li>
+            <li><a href="#projetos" class="link js-link">Meus projetos</a></li>
+            <li><a href="#habilidades" class="link js-link">Habilidades</a></li>
+            <li><a href="#contato" class="link js-link">Contato</a></li>
             <li><a href="#" class="marketing link">Currículo marketing</a></li>
             <li><a href="#" class="btn btn-enviar">Enviar no whatsapp</a></li>
             <li><a href="#" class="btn btn-download">Download Cv</a></li>
@@ -37,22 +43,22 @@
             <li><a href=""><img src="./icones/email.svg" alt="" class="mail"></a></li>
         </ul>
     </nav>
-    <section class="inicio" id="inicio">
-        <img src="./imagens/other.jpg" alt="">
+    <section class="inicio section" id="inicio">
+        <img src="./imagens/other.jpg" alt="" class="bg-img">
+        </div>
         <div>
             <h1>Olá, prazer <span>Riquelme</span>!</h1>
             <p>Desenvolvedor Front-end,Mobile, UX/UI & Marketer</p>
         </div>
     </section>
-    <section class="sobre-mim all-wide" id="sobre-mim">
+    <section class="sobre-mim all-wide section" id="sobre-mim">
         <div>
             <h2>Um pouco sobre mim</h2>
         </div>
         <div class="item"> </div>
         <!-- <div> -->
         <div class="in-date">
-            <p class="text"><span>Eu sou <span class="Raoni">Raoni Riquelme</span>!</span><br> aspirante a desenvolvedor web e mobile.
-                Em formação na Uninter em análise e desenvolvimento de sistemas. Pretendo seguir por esta área de front end e UX/UI.
+            <p class="text"><span class="text-span">Eu sou <span class="Raoni">Raoni Riquelme</span>!</span><br> Aspirante a desenvolvedor web e mobile. Em formação na Uninter em análise e desenvolvimento de sistemas. Pretendo seguir por esta área de front end e UX/UI.
             </p>
             <ul>
                 <li><Span>Nome:</Span> Raoni Riquelme</li>
@@ -64,7 +70,7 @@
 
         <!-- </div> -->
     </section>
-    <section class="oque-faco all-wide" id="oque-faco">
+    <section class="oque-faco all-wide section" id="oque-faco">
         <div>
             <h2>Oque eu faço?</h2>
         </div>
@@ -101,7 +107,7 @@
         </div>
 
     </section>
-    <section class="projetos all-wide" id="projetos">
+    <section class="projetos all-wide section" id="projetos">
         <div>
             <h2>Meus projetos</h2>
         </div>
@@ -109,29 +115,32 @@
         <div class="projetos-container">
             <div class="projetos-destaques">
                 <p>Destaques</p>
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
+                <div>
+
+                    <img src="./imagens/printscreen.png" alt="">
+                    <img src="./imagens/printscreen.png" alt="">
+                    <img src="./imagens/printscreen.png" alt="" class="destaq-no-active">
+                </div>
             </div>
             <div class="outros-projetos">
                 <p>Outros projetos</p>
                 <img src="./imagens/printscreen.png" alt="">
                 <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
+                <img src="./imagens/printscreen.png" alt="" class="">
+                <img src="./imagens/printscreen.png" alt="" class="no-active">
+                <img src="./imagens/printscreen.png" alt="" class="no-active">
+                <img src="./imagens/printscreen.png" alt="" class="no-active">
+                <img src="./imagens/printscreen.png" alt="" class="no-active">
+                <img src="./imagens/printscreen.png" alt="" class="no-active">
+                <img src="./imagens/printscreen.png" alt="" class="no-active">
+                <!-- <img src="./imagens/printscreen.png" alt="" class="no-active"> -->
+                <!-- <img src="./imagens/printscreen.png" alt="" class="no-active">
+                <img src="./imagens/printscreen.png" alt="" class="no-active"> -->
             </div>
         </div>
         <a href="#" class="btn-global">></a>
     </section>
-    <section class="habilidades all-wide" id="habilidades">
+    <section class="habilidades all-wide section" id="habilidades">
         <div>
             <h2>Minhas habilidades</h2>
         </div>
@@ -171,7 +180,7 @@
         </div>
 
     </section>
-    <section class="contato all-wide" id="contato">
+    <section class="contato all-wide section" id="contato">
         <div>
             <h2>Contato</h2>
         </div>
@@ -188,17 +197,19 @@
             <div class="item item-2">
 
             </div>
-            <form action="#" method="post" class="form">
+            <form action="https://formsubmit.co/riquelmepantojadev@gmail.com" method="POST" class="form">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" required>
                 <label for="e-mail">E-mail:</label>
-                <input type="email" name="e-mail" id="e-mail">
+                <input type="email" name="e-mail" id="e-mail" required>
                 <label for="mensagem">Mensagem:</label>
                 <textarea name="mensagem" id="mensagem" rows="10" cols="20" required></textarea>
                 <button type="submit" class="btn-global btn-cntt">enviar</button>
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

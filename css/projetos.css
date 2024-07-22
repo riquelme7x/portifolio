@@ -72,6 +72,12 @@
     /* text-align: left; */
 }
 
+.projetos-destaques div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .outros-projetos {
     display: grid;
     gap: 30px;
@@ -87,6 +93,7 @@
     grid-column: 1 / -1;
 }
 
+
 .projetos .btn-global {
     margin-top: 10px;
     margin-right: 180px;
@@ -96,4 +103,127 @@
     align-self: flex-end;
 
 
+}
+
+@media (max-width:1600px) {
+    .outros-projetos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .projetos {
+        height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:850px) {
+    .projetos {
+        height: 80vh;
+    }
+
+    .no-active {
+        display: none;
+    }
+}
+
+@media (max-width:1050px) {
+    .projetos img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .projetos {
+        padding-top: 60px;
+
+    }
+
+    .projetos h2 {
+        font-size: 2.5rem;
+    }
+
+    .projetos h2::after {
+        font-size: 5rem;
+    }
+
+    .projetos-container {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    .projetos-container p {
+        font-size: 1.5rem;
+    }
+
+    .projetos-destaques {
+        gap: 6px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projetos-destaques div {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .outros-projetos {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .outros-projetos p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:650px) {
+    .projetos-container {
+        flex-direction: column;
+        gap: 8px
+    }
+
+    .projetos-destaques .destaq-no-active {
+        display: none;
+    }
+
+    .outros-projetos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:550px) {
+    .projetos {
+        height: 100%;
+    }
+
+    .projetos h2 {
+        font-size: 2rem;
+    }
+
+    .projetos h2::after {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:470px) {
+    .projetos img {
+        width: 180px;
+    }
+}
+
+@media (max-width:450px) {
+    .projetos {
+        height: 80vh;
+    }
+
+    .projetos h2::after {
+        font-size: 3rem;
+    }
+
+    .projetos img {
+        width: 140px;
+    }
 }

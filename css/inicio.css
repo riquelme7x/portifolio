@@ -6,11 +6,12 @@
     display: grid;
     align-items: center;
     position: relative;
+    /*  */
 }
 
 .inicio img {
     z-index: -1;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     opacity: .2;
     width: 100%;
@@ -26,6 +27,49 @@
     color: var(--e3);
 }
 
-.incio div p {
-    font-size: 3rem;
+
+.inicio div p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 850px) {
+    .inicio {
+        margin: 0px;
+    }
+}
+
+@media (max-width:1300px) {
+    .inicio div h1 {
+        font-size: 4.1rem;
+    }
+
+    .inicio div p {
+        font-size: 1.05rem;
+    }
+}
+
+@media(max-width:650px) {
+    .inicio h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .inicio {
+        height: 60vh;
+    }
+
+    .inicio div p {
+        font-size: 0.875rem !important;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .inicio h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .inicio div p {
+        font-size: 0.575rem !important;
+    }
 }

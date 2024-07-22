@@ -59,6 +59,13 @@ body {
     height: 100vh;
 }
 
+@media (max-width: 850px) {
+    .all-wide {
+        margin: 0px;
+    }
+}
+
+
 .item {
     width: 60px;
     height: 2px;

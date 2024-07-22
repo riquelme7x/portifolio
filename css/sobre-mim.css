@@ -98,3 +98,57 @@
     background: var(--p7);
     color: var(--e3);
 }
+
+@media (max-width:1400px) {
+    .sobre-mim {
+        gap: 60px;
+    }
+
+    .sobre-mim h2 {
+        font-size: 2.5rem;
+    }
+
+    .sobre-mim h2::after {
+        font-size: 5rem;
+    }
+
+    .item {
+        width: 40px;
+    }
+
+    .in-date {
+        flex-direction: column;
+        align-self: flex-center
+    }
+
+    .sobre-mim .in-date p {
+        font-size: 0.975rem !important;
+        width: 50ch;
+        /* text-align: justify; */
+    }
+
+    .text .text-span {
+        font-size: 1.5rem !important;
+    }
+
+    .Raoni {
+        font-size: 1.7rem !important;
+    }
+}
+
+@media (max-width:550px) {
+    .sobre-mim h2 {
+        font-size: 2rem;
+    }
+
+    .sobre-mim h2::after {
+        font-size: 4rem;
+    }
+
+    .sobre-mim .in-date p {
+        font-size: 0.875rem !important;
+        width: 40ch;
+        /* text-align: justify; */
+        text-align: left;
+    }
+}

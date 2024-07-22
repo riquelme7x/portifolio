@@ -51,11 +51,13 @@
     justify-items: center;
     align-items: center;
     gap: 60px;
+
 }
 
 .skills .skills-item {
     background: var(--p6);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
@@ -79,4 +81,155 @@
 
 .habilidades .star {
     width: 100px;
+}
+
+@media (max-width: 1300px) {
+    .habilidades h2 {
+        font-size: 2.5rem;
+    }
+
+    .habilidades h2::after {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width:850px) {
+    .habilidades {
+        height: auto;
+        gap: 40px !important;
+    }
+
+    .skills {
+        gap: 40px !important;
+    }
+}
+
+@media (max-width:1000px) {
+    .habilidades {
+        gap: 0px;
+        padding: 80px;
+    }
+
+    .skills {
+        /* grid-template-columns: 1fr 1fr; */
+        gap: 20px;
+    }
+
+    /* 
+    .skills-item img {
+        /* width: 90px !important; */
+
+    .skills .skills-item {
+        gap: 0px;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+@media(max-width:520px) {
+    .habilidades h2 {
+        font-size: 2.1rem;
+    }
+}
+
+@media(max-width:550px) {
+    .habilidades {
+        height: auto !important;
+        align-content: center;
+    }
+
+    .habilidades h2::after {
+        font-size: 3.5rem !important;
+    }
+
+}
+
+@media(max-width:650px) {
+    .habilidades h2::after {
+        font-size: 4.5rem;
+    }
+}
+
+@media(max-width:630px) {
+    .habilidades .item {
+        margin: 10px;
+    }
+
+    .texto-hab {
+        margin: 0px;
+    }
+
+    .habilidades {
+        height: auto !important;
+        align-content: center;
+
+    }
+
+    .habilidades h2 {
+        font-size: 1.8rem;
+    }
+
+    .habilidades h2::after {
+        font-size: 3rem
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 13px !important;
+
+    }
+
+    .skills .skills-item {
+        background: var(--p6);
+        gap: 8px;
+        /* padding: 20px 10px; */
+    }
+
+    .skills img:first-child {
+        /* width: 40px !important; */
+    }
+
+    .skills img:last-child {
+        /* width: 40px !important; */
+    }
+
+    .skills-titulo {
+        font-size: 0.775rem !important;
+    }
+
+    .skills-corpo {
+        font-size: 0.775rem;
+    }
+}
+
+@media (max-width:430px) {
+    .habilidades h2 {
+        font-size: 1.5rem;
+    }
+
+    .habilidades h2::after {
+        font-size: 2.5rem !important;
+    }
+
+    .texto-hab {
+        width: 35ch;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .skills {
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .skills-item {
+        background: transparent !important;
+        align-items: center;
+    }
+
+    .skills img {
+        width: 30px !important;
+    }
 }

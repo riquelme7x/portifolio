@@ -137,3 +137,97 @@
     align-self: flex-end;
     transform: translatey(-25px);
 }
+
+@media (max-width: 1350px) {
+    .contato h2 {
+        font-size: 2.5rem;
+    }
+
+    .contato h2::after {
+        font-size: 4.5rem;
+    }
+
+    .contato-container {
+        gap: 40px;
+    }
+
+    .form input {
+        width: 300px;
+    }
+}
+
+@media (max-width:1150px) {
+    .contato {
+        padding: 60px;
+        gap: 20px;
+    }
+
+    .contato-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .item-2 {
+        display: none;
+        height: 1px;
+        width: 100px;
+
+    }
+
+    .contato-dados ul li a {
+        font-size: 0.976rem;
+    }
+
+    .form {
+        margin-top: 10px;
+    }
+
+    .form label {
+        font-size: 0.976rem;
+    }
+
+    .form input {
+        width: 300px;
+    }
+
+    .contato-dados {
+        padding: 8px;
+    }
+}
+
+@media(max-width:850px) {
+    .contato-container {
+        gap: 10px !important;
+        flex-direction: row;
+        margin-top: 80px;
+    }
+}
+
+
+
+@media(max-width:750px) {
+    .contato {
+        padding: 40px;
+        height: 100%;
+    }
+
+    .contato h2::after {
+        font-size: 3.5rem;
+    }
+
+    .contato-container {
+        flex-direction: column;
+        margin-top: 12px;
+    }
+
+    .contato-dados ul li a {
+        font-size: 0.875rem;
+        padding: 8px;
+    }
+}
+
+@media(max-width:450px) {
+    .contato h2::after {
+        font-size: 3rem;
+    }
+}

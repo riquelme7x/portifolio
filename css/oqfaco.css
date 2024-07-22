@@ -83,3 +83,48 @@
     /* justify-content: center; */
     text-align: left center;
 }
+
+@media (max-width: 1250px) {
+    .oque-faco h2 {
+        font-size: 2.5rem;
+    }
+
+    .oque-faco h2::after {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 1150px) {
+    .job {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .oque-faco h2 {
+        font-size: 2rem;
+    }
+
+    .oque-faco h2::after {
+        font-size: 3.5rem;
+    }
+
+    .oque-faco {
+        padding: 30px;
+        gap: 30px;
+
+    }
+}
+
+@media (max-width:430px) {
+    .job-titulo {
+        font-size: 0.875rem !important;
+    }
+
+    .job-corpo {
+        max-width: 25ch !important;
+        font-size: 0.675rem !important;
+
+    }
+
+}
