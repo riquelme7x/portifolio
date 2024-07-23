@@ -148,7 +148,7 @@
         background: #fff;
         align-items: center;
         justify-content: space-between;
-        padding: 12px 0px;
+        padding: 12px 1px !important;
         background: var(--p6);
         position: fixed;
         width: 100vw;
@@ -173,6 +173,26 @@
         margin-top: 16px;
         margin-bottom: 24px;
     }
+
+    #menu .btns {
+        display: flex;
+        margin-left: 8px;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #menu .btn-menu-mb {
+        width: 200px;
+        font-size: 0.9rem;
+        text-align: center;
+        color: var(--p6);
+        font-weight: bold;
+    }
+
+    #menu .btn-menu-mb.btn-download {
+        color: var(--p5);
+    }
+
 
     #nav ul li a {
         padding: .8rem;
@@ -248,5 +268,37 @@
 
     .menu-redes img {
         width: 36px;
+    }
+}
+
+
+@media(max-width:500px) {
+    #menu .btns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+
+    #nav .menu-redes {
+        margin-top: 20px;
+    }
+
+    .menu-redes {
+        display: flex;
+    }
+
+    #nav .menu-redes {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width:460px) {
+    .menu-redes {
+        display: flex
+    }
+
+    #nav .menu-redes {
+        margin-top: 10px;
     }
 }
