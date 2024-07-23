@@ -35,7 +35,29 @@ links.forEach(link => {
     link.addEventListener('click', scrollSection)
 });
 
+//mobile
+let linksMB = document.querySelectorAll(".j-link");
+let Sections = document.querySelectorAll(".section");
+window.addEventListener('scroll', () => {
+    Sections.forEach(Section => {
+        let top = window.scrollY;
+        let offset = Section.offsetTop;
+        let heightSection = Section.offsetHeight;
+        let idSection = Section.getAttribute("id");
+
+        if (top >= offset && top < offset + heightSection) {
+            linksMB.forEach(link => {
+                link.classList.remove("active-mb");
+
+                document.querySelector(`#nav li a[href*='${idSection}']`).classList.add('active-mb');
+            })
+        }
+    })
+
+})
+
 // Menu hamburguer mobile
+
 const btnMobile = document.getElementById("btn-mobile");
 
 function toogleMenu(event) {
@@ -47,12 +69,31 @@ function toogleMenu(event) {
     if (ative) {
         event.currentTarget.setAttribute('aria-label', 'Fechar Menu')
     } else
-        event.currentTarget.setAttribute('aria-label', 'Abrir Menu')
-
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
 }
+// teste
+
+const Itens1 = document.querySelector(".close-m1");
+Itens1.addEventListener('click', toogleMenu);
+const Itens2 = document.querySelector(".close-m2");
+Itens2.addEventListener('click', toogleMenu);
+const Itens3 = document.querySelector(".close-m3");
+Itens3.addEventListener('click', toogleMenu);
+const Itens4 = document.querySelector(".close-m4");
+Itens4.addEventListener('click', toogleMenu);
+const Itens5 = document.querySelector(".close-m5");
+Itens5.addEventListener('click', toogleMenu);
+const Itens6 = document.querySelector(".close-m6");
+Itens6.addEventListener('click', toogleMenu);
+
+
+
 btnMobile.addEventListener('click', toogleMenu);
 btnMobile.addEventListener('touchstart', toogleMenu);
 
 
 // Formulário
 const formulario = document.querySelector('form');
+
+
+//tentativas

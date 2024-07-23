@@ -28,6 +28,10 @@ button {
     --p8: #1a012e;
     --p9: #140124;
     --p13: #000;
+    --ti-cursor-color: #d2ccd6;
+    --ti-cursor-font-size: 1.6rem;
+    --ti-cursor-font-weight: 400;
+    --ti-cursor-font-family: "Dm sans";
 }
 
 body {

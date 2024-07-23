@@ -27,6 +27,10 @@
     color: var(--e3);
 }
 
+.animated {
+    color: var(--p2) !important;
+    font-size: 1.5rem;
+}
 
 .inicio div p {
     font-size: 1.2rem;
@@ -48,13 +52,32 @@
     }
 }
 
-@media(max-width:650px) {
+@media(max-width:700px) {
+    :root {
+        --ti-cursor-font-size: 1.6rem;
+        --ti-cursor-font-weight: 400;
+    }
+
+    .animated {
+        font-size: 1.2rem;
+    }
+
     .inicio h1 {
         font-size: 2.5rem !important;
     }
 
+
+
     .inicio {
-        height: 60vh;
+        height: 100vh;
+        overflow-x: hidden !important;
+        position: relative;
+    }
+
+    .bg-img {
+        width: 900px !important;
+        position: absolute;
+        left: -190px;
     }
 
     .inicio div p {

@@ -233,3 +233,25 @@
         width: 30px !important;
     }
 }
+
+@media (max-width:410px) {
+    .habilidades {
+        padding: 40px;
+    }
+
+    .texto-hab {
+        font-size: 0.775rem;
+    }
+
+    .habilidades h2 {
+        font-size: 1rem;
+    }
+
+    .habilidades h2::after {
+        font-size: 2rem !important;
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+}

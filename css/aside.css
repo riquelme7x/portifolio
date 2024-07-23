@@ -66,6 +66,13 @@
 
 }
 
+.active-mb {
+    color: #fff !important;
+    background: var(--p8);
+    border-radius: 10px;
+
+}
+
 .marketing {
     color: var(--e3);
     font-size: 1.12rem;
@@ -141,7 +148,7 @@
         background: #fff;
         align-items: center;
         justify-content: space-between;
-        padding: 16px 24px;
+        padding: 12px 0px;
         background: var(--p6);
         position: fixed;
         width: 100vw;

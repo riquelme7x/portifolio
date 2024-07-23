@@ -215,8 +215,16 @@
 }
 
 @media (max-width:450px) {
+    .projetos h2 {
+        margin-top: 80px;
+    }
+
     .projetos {
-        height: 80vh;
+        height: 100vh;
+    }
+
+    .projetos-container {
+        gap: 60px;
     }
 
     .projetos h2::after {
@@ -225,5 +233,11 @@
 
     .projetos img {
         width: 140px;
+    }
+}
+
+@media (max-width:400px) {
+    .projetos img {
+        width: 120px;
     }
 }

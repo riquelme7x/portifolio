@@ -128,3 +128,51 @@
     }
 
 }
+
+@media (max-width:390px) {
+    .oque-faco h2 {
+        font-size: 1rem;
+    }
+
+    .oque-faco h2::after {
+        font-size: 2rem;
+    }
+
+    .oque-faco {
+        padding: 10px;
+        gap: 10px;
+
+    }
+
+    .oque-faco {
+        gap: 40px;
+    }
+
+    .job-titulo {
+        font-size: 0.7rem !important;
+    }
+
+    .job-corpo {
+        max-width: 25ch !important;
+        font-size: 0.6rem !important;
+
+    }
+
+    .job-item img {
+        width: 60px;
+        height: 60px;
+        padding: 12px;
+    }
+
+    .form input,
+    .form textarea {
+        width: 250px !important;
+    }
+
+    .btn-cntt {
+        font-size: 0.9rem !important;
+        padding: 8px 12px !important;
+        width: 100% !important;
+        font-weight: bold !important;
+    }
+}
