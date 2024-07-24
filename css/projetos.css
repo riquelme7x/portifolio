@@ -210,7 +210,7 @@
 
 @media (max-width:470px) {
     .projetos img {
-        width: 180px;
+        width: 160px;
     }
 }
 
@@ -236,8 +236,22 @@
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .projetos img {
         width: 120px;
+    }
+}
+
+@media (max-width:400px) {
+    .projetos h2 {
+        margin-top: 40px;
+    }
+
+    .projetos h2::after {
+        font-size: 2rem;
+    }
+
+    .projetos img {
+        width: 100px;
     }
 }

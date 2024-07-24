@@ -18,7 +18,7 @@
 <body>
     <nav class="nav">
         <div>
-            <img src="./imagens/profile-pic.png" alt="">
+            <img src="./imagens/profile-pic.png" alt="" class="profile-img">
             <p>Raoni Riquelme</p>
         </div>
         <div class="traco"> </div>
@@ -31,14 +31,14 @@
             <li><a href="#contato" class="link js-link">Contato</a></li>
             <!-- <li><a href="#" class="marketing link">Currículo marketing</a></li> -->
             <li><a href="https://w.app/riquelmepantoja" class="btn btn-enviar">Enviar no whatsapp</a></li>
-            <li><a href="./curriculo/CV-RAONI.pdf" class="btn btn-download" download="CV-RAONI.pdf">Download Cv</a></li>
+            <li><a href="./curriculo/CV-RIQUELME.pdf" class="btn btn-download" download="CV-RIQUELME.pdf">Download Cv</a></li>
         </ul>
         <ul class="redes-sociais">
             <li><a href="https://github.com/riquelme7x"><img src="./icones/github.svg" alt="" class="git"></a></li>
             <li><a href="https://w.app/riquelmecontato"><img src="./icones/wpp.svg" alt="" class=""></a></li>
             <li><a href="https://www.linkedin.com/in/riquelmepantoja"><img src="./icones/linkedin.svg" alt="" class="linkedin"></a></li>
             <li><a href="https://www.instagram.com/riquelme.o_x/"><img src="./icones/insta.svg" alt="" class="insta"></a></li>
-            <li><a href="mailto:riquelme@riquelmepantoja.com"><img src="./icones/email.svg" alt="" class="mail"></a></li>
+            <li><a href="mailto:contato@riquelmepantoja.com"><img src="./icones/email.svg" alt="" class="mail"></a></li>
         </ul>
     </nav>
     <header id="header">
@@ -52,12 +52,15 @@
                 <li><a href="#projetos" class="active-mb j-link close-m4">O que eu faço?</a></li>
                 <li><a href="#habilidades" class="active-mb j-link close-m5">Habilidades</a></li>
                 <li><a href="#contato" class="active-mb j-link close-m6">Contato</a></li>
-                <li class="btns"><a href="https://w.app/riquelmepantoja" class="btn-menu-mb btn-global">Enviar no whatsapp</a><a href="" class="btn-menu-mb btn-download">Download Cv</a></li>
+                <li class="btns">
+                    <a href="https://w.app/riquelmepantoja" class="btn-menu-mb btn-global">Enviar no whatsapp</a>
+                    <a href="./curriculo/CV-RIQUELME.pdf" download="CV-RIQUELME.pdf" class="btn-menu-mb btn-download">Download Cv</a>
+                </li>
                 <!-- <li><a href="" class="btn-menu-mb btn-download">Download Cv</a></li> -->
                 <ul class="menu-redes">
                     <li><a href="https://github.com/riquelme7x"><img src="./icones/github.svg" alt="" class="git"></a></li>
                     <li><a href="https://www.linkedin.com/in/riquelmepantoja"><img src="./icones/linkedin.svg" alt="" class="linkedin"></a></li>
-                    <li><a href="mailto:riquelme@riquelmepantoja.com"><img src="./icones/email.svg" alt="" class="mail"></a></li>
+                    <li><a href="mailto:contato@riquelmepantoja.com"><img src="./icones/email.svg" alt="" class="mail"></a></li>
                 </ul>
             </ul>
             <img src="./icones/darkmode.svg" alt="">
@@ -82,7 +85,7 @@
             </p>
             <ul>
                 <li><Span>Nome:</Span> Raoni Riquelme</li>
-                <li><Span>E-mail:</Span><a href="mailto:riquelmepantojaf@gmail.com">riquelme@riquelmepantoja.com</a></li>
+                <li><Span>E-mail:</Span><a href="mailto:contato@riquelmepantoja.com">contato@riquelmepantoja.com</a></li>
                 <li><Span>Idade:</Span> 22 anos</li>
                 <li><Span>De: </Span>Belém/Pará</li>
         </div>
@@ -158,7 +161,7 @@
                 <img src="./imagens/printscreen.png" alt="" class="no-active"> -->
             </div>
         </div>
-        <a href="#" class="btn-global">></a>
+        <!-- <a href="#" class="btn-global">></a> -->
     </section>
     <section class="habilidades all-wide section" id="habilidades">
         <div>
@@ -209,7 +212,7 @@
             <div class="contato-dados">
                 <ul>
                     <li><img src="./icones/wpp.svg" alt=""><a href="tel:+5591982862938">(91) 982886-2938</a></li>
-                    <li><img src="./icones/email.svg" alt=""><a href="mailto:riquelme@riquelmepantoja.com">riquelme@riquelmepantoja.com</a></li>
+                    <li><img src="./icones/email.svg" alt=""><a href="mailto:contato@riquelmepantoja.com">contato@riquelmepantoja.com</a></li>
                     <li><img src="./icones/github.svg" alt=""><a href="https://github.com/riquelme7x"">Github</a></li>
                     <li><img src=" ./icones/linkedin.svg" alt=""><a href="https://www.linkedin.com/in/riquelmepantoja">LinkedIn</a></li>
                 </ul>
@@ -217,11 +220,12 @@
             <div class="item item-2">
 
             </div>
+
             <form action="./enviar.php" method="post" class="contato-formulario form" aria-label="Formulário">
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
                 <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                <input type="email" name="email" id="email" placeholder="contato@email.com" required>
                 <label for="mensagem">Mensagem:</label>
                 <textarea name="mensagem" id="mensagem" rows="10" cols="20" placeholder="Sua mensagem..." required></textarea>
                 <button type="submit" class="btn-global btn-cntt">enviar</button>
@@ -229,6 +233,7 @@
         </div>
     </section>
     <script src="./js/script.js"></script>
+    <script src="./js/formulario.js"></script>
     <script src="./js/type.js" defer></script>
 </body>
 

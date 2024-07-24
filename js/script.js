@@ -91,9 +91,3 @@ Itens6.addEventListener('click', toogleMenu);
 btnMobile.addEventListener('click', toogleMenu);
 btnMobile.addEventListener('touchstart', toogleMenu);
 
-
-// Formulário
-const formulario = document.querySelector('form');
-
-
-//tentativas

@@ -24,6 +24,8 @@
     /* margin-bottom: 70px; */
 }
 
+
+
 .contato h2::after {
     content: "CONTATO";
     /* text-align: center; */
@@ -112,10 +114,23 @@
 
 }
 
+#return-true {
+    background: var(--p6);
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+#return-false {
+    background: var(--p6);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
 .btn-cntt {
     outline: none;
     border: none;
-    width: 120px;
+    /* width: 120px; */
     border-radius: 4px;
     padding: 10px 20px;
     align-self: flex-end;
