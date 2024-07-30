@@ -10,6 +10,7 @@
     position: relative;
     gap: 80px;
     color: var(--p2);
+    transition: .5s
 }
 
 .oque-faco h2 {
@@ -84,6 +85,24 @@
     text-align: left center;
 }
 
+/* inicio do darkmode */
+body.dark .oque-faco {
+    background-image: linear-gradient(to bottom, #d2ccd6, #c7bfcc, #bbb2c1, #b0a6b7, #a599ad);
+}
+
+body.dark .oque-faco h2 {
+    color: var(--p7);
+}
+
+body.dark .oque-faco .job .job-item .job-titulo {
+    color: var(--e1);
+}
+
+body.dark .oque-faco .job .job-item .job-corpo {
+    color: var(--p6);
+}
+
+/* fim do darkmode */
 @media (max-width: 1250px) {
     .oque-faco h2 {
         font-size: 2.5rem;

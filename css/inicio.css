@@ -1,5 +1,4 @@
 .inicio {
-    margin-left: 260px;
     height: 100vh;
     color: #fff;
     text-align: center;
@@ -69,15 +68,15 @@
 
 
     .inicio {
-        height: 100vh;
+        height: 80vh;
         overflow-x: hidden !important;
         position: relative;
     }
 
     .bg-img {
-        width: 900px !important;
+        width: 1500px !important;
         position: absolute;
-        left: -190px;
+        /* left: -190px; */
     }
 
     .inicio div p {
@@ -85,6 +84,20 @@
     }
 
 
+}
+
+@media(max-width:550px) {
+    .inicio {
+        height: 60vh;
+        overflow-x: hidden !important;
+        position: relative;
+    }
+
+    .bg-img {
+        width: 1000px !important;
+        position: absolute;
+        /* left: -30px; */
+    }
 }
 
 @media (max-width:400px) {

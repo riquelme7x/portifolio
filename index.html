@@ -11,61 +11,46 @@
     <link rel=" preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
-
 </head>
 
 <body>
+    <!-- Para voce que esta vendo o codigo deste portifolio, sei que não esta semanticamente bonito. Foi feito através de adaptações. Bem no ínicio quando ainda não sabia muito,apanhei bastante pra construir as coisas. Mas futuramente estarei criando uma versão atualizada com tudo semanticamente correto e melhor organizado, Estou aberto a críticas visando a minha melhora. Sou apaixonado por front mas estou buscando expandir mais minha área de ação-->
     <nav class="nav">
-        <div>
-            <img src="./imagens/profile-pic.png" alt="" class="profile-img">
-            <p>Raoni Riquelme</p>
+        <div class="trilho" id="trilho">
+            <div class="indicador"></div>
         </div>
-        <div class="traco"> </div>
         <ul class="nav-lista">
             <li><a href="#inicio" class="active link js-link">Ínicio</a></li>
             <li><a href="#sobre-mim" class="link js-link">Sobre mim</a></li>
-            <li><a href="#oque-faco" class="link js-link">O que eu faço?</a></li>
             <li><a href="#projetos" class="link js-link">Meus projetos</a></li>
+            <li><a href="#oque-faco" class="link js-link">O que eu faço?</a></li>
             <li><a href="#habilidades" class="link js-link">Habilidades</a></li>
             <li><a href="#contato" class="link js-link">Contato</a></li>
-            <!-- <li><a href="#" class="marketing link">Currículo marketing</a></li> -->
-            <li><a href="https://w.app/riquelmepantoja" class="btn btn-enviar">Enviar no whatsapp</a></li>
-            <li><a href="./curriculo/CV-RIQUELME.pdf" class="btn btn-download" download="CV-RIQUELME.pdf">Download Cv</a></li>
         </ul>
-        <ul class="redes-sociais">
-            <li><a href="https://github.com/riquelme7x"><img src="./icones/github.svg" alt="" class="git"></a></li>
-            <li><a href="https://w.app/riquelmecontato"><img src="./icones/wpp.svg" alt="" class=""></a></li>
-            <li><a href="https://www.linkedin.com/in/riquelmepantoja"><img src="./icones/linkedin.svg" alt="" class="linkedin"></a></li>
-            <li><a href="https://www.instagram.com/riquelme.o_x/"><img src="./icones/insta.svg" alt="" class="insta"></a></li>
-            <li><a href="mailto:contato@riquelmepantoja.com"><img src="./icones/email.svg" alt="" class="mail"></a></li>
-        </ul>
-    </nav>
-    <header id="header">
+
+
         <nav id="nav">
             <button aria-label="abrir-menu" id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true"><span id="hamburger">
                 </span></button>
             <ul id="menu" role="menu">
                 <li><a href="#inicio" class="active-mb j-link close-m1">Ínicio</a></li>
                 <li><a href="#sobre-mim" class="active-mb j-link close-m2">Sobre mim</a></li>
+                <li><a href="#projetos" class="active-mb j-link close-m4">Meus projetos</a></li>
                 <li><a href="#oque-faco" class="active-mb j-link close-m3">O que eu faço?</a></li>
-                <li><a href="#projetos" class="active-mb j-link close-m4">O que eu faço?</a></li>
                 <li><a href="#habilidades" class="active-mb j-link close-m5">Habilidades</a></li>
                 <li><a href="#contato" class="active-mb j-link close-m6">Contato</a></li>
                 <li class="btns">
-                    <a href="https://w.app/riquelmepantoja" class="btn-menu-mb btn-global">Enviar no whatsapp</a>
+                    <a href="https://wa.me/5591992701374?text=Ol%C3%A1%20Riquelme%2Cfiquei%20interessado%20no%20seu%20trabalho!" class="btn-menu-mb btn-global">Enviar no whatsapp</a>
                     <a href="./curriculo/CV-RIQUELME.pdf" download="CV-RIQUELME.pdf" class="btn-menu-mb btn-download">Download Cv</a>
                 </li>
-                <!-- <li><a href="" class="btn-menu-mb btn-download">Download Cv</a></li> -->
                 <ul class="menu-redes">
                     <li><a href="https://github.com/riquelme7x"><img src="./icones/github.svg" alt="" class="git"></a></li>
                     <li><a href="https://www.linkedin.com/in/riquelmepantoja"><img src="./icones/linkedin.svg" alt="" class="linkedin"></a></li>
                     <li><a href="mailto:contato@riquelmepantoja.com"><img src="./icones/email.svg" alt="" class="mail"></a></li>
                 </ul>
             </ul>
-            <img src="./icones/darkmode.svg" alt="">
         </nav>
-    </header>
+    </nav>
     <section class="inicio section" id="inicio">
         <img src="./imagens/other.jpg" alt="" class="bg-img">
         </div>
@@ -75,30 +60,129 @@
         </div>
     </section>
     <section class="sobre-mim all-wide section" id="sobre-mim">
-        <div>
-            <h2>Um pouco sobre mim</h2>
+        <div class="sobre-mim-container" id="sobre">
+            <div class="img-profile efeito-txt-topo">
+                <img src="./imagens/imagem-vetor.png" alt="">
+            </div>
+            <!-- <div> -->
+            <div class="in-date efeito-div-topo">
+                <div>
+                    <p class="text">Muito prazer,<br><span class="Raoni">Sou Raoni Riquelme.</span></p>
+                    <p class="text-2" id="">
+                        Estudante de Análise e Desenvolvimento de Sistemas na Uninter, focado em front-end e UX/UI.
+                        <br>Em busca oportunidades.
+                    </p>
+                </div>
+                <ul>
+                    <li><Span>E-mail:</Span><a href="mailto:contato@riquelmepantoja.com">contato@riquelmepantoja.com</a></li>
+                    <li><Span>Idade:</Span> 22 anos</li>
+                    <li><Span>De: </Span>Belém/Pará</li>
+                </ul>
+                <div class="botaos">
+                    <a href="https://wa.me/5591992701374?text=Ol%C3%A1%20Riquelme%2Cfiquei%20interessado%20no%20seu%20trabalho!https://wa.me/5591992701374?text=Ol%C3%A1%20Riquelme%2Cfiquei%20interessado%20no%20seu%20trabalho!" class="btn-global">Enviar via whatsapp</a>
+                    <a href="./curriculo/CV-RIQUELME.pdf" download="CV-RIQUELME.pdf" class="btn-global">Download CV</a>
+                </div>
+            </div>
         </div>
-        <div class="item"> </div>
-        <!-- <div> -->
-        <div class="in-date">
-            <p class="text"><span class="text-span">Eu sou <span class="Raoni">Raoni Riquelme</span>!</span><br> Aspirante a desenvolvedor web e mobile. Em formação na Uninter em análise e desenvolvimento de sistemas. Pretendo seguir por esta área de front end e UX/UI.
-            </p>
-            <ul>
-                <li><Span>Nome:</Span> Raoni Riquelme</li>
-                <li><Span>E-mail:</Span><a href="mailto:contato@riquelmepantoja.com">contato@riquelmepantoja.com</a></li>
-                <li><Span>Idade:</Span> 22 anos</li>
-                <li><Span>De: </Span>Belém/Pará</li>
-        </div>
-        <a href="https://w.app/riquelmepantoja" class="btn-global">Enviar via whatsapp</a>
 
         <!-- </div> -->
     </section>
+    <section class="projetos all-wide section" id="projetos">
+        <div class="titulo-mb pj-mb">
+            <h2>Meus projetos</h2>
+            <div class="item"> </div>
+        </div>
+        <div class="titulo-projetos efeito-txt-titulo">
+            <h1>projetos</h1>
+        </div>
+        <div class="projetos-container">
+            <div class="projeto-item efeito-projeto">
+                <div class="img-port portImg-1" style="background-image:url(imagens/outro-projeto.png);"></div>
+                <div class="skillss-item">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+                <div class="links-item">
+                    <a href="./">Ver projeto</a>
+                    <a href="./3sa.com">Github</a>
+                </div>
+
+            </div>
+            <div class="projeto-item efeito-projeto">
+                <div class="img-port portImg-2" style="background-image:url(imagens/projeto-lobo-img.png); transition:4s;"></div>
+                <div class="skillss-item">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Grid</span>
+                </div>
+                <div class="links-item">
+                    <a href="./">Ver projeto</a>
+                    <a href="./3sa.com">Github</a>
+                </div>
+
+            </div>
+            <div class="projeto-item efeito-projeto">
+                <div class="img-port portImg-3" style="background-image:url(imagens/projeto-3.png);"></div>
+                <div class="skillss-item">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Flexbox</span>
+                </div>
+                <div class="links-item">
+                    <a href="./">Ver projeto</a>
+                    <a href="./3sa.com">Github</a>
+                </div>
+
+                <!-- </div>
+            <div class="projeto-item efeito-projeto">
+                <div class="img-port portImg-4" style=" background-image:url(imagens/projeto-lobo-img.png); transition:4s;"></div>
+                <div class="skillss-item">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+                <div class="links-item">
+                    <a href="./">Ver projeto</a>
+                    <a href="./3sa.com">Github</a>
+                </div>
+
+            </div>
+            <div class="projeto-item efeito-projeto">
+                <div class="img-port portImg-5" style=" background-image:url(imagens/outro-projeto.png);"></div>
+                <div class="skillss-item">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>CSS</span>
+                </div>
+                <div class="links-item">
+                    <a href="./">Ver projeto</a>
+                    <a href="./3sa.com">Github</a>
+                </div>
+
+            </div>
+            <div class="projeto-item efeito-projeto">
+                <div class="img-port portImg-6" style=" background-image:url(imagens/projeto-lobo-img.png); transition:4s;"></div>
+                <div class="skillss-item">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>CSS</span>
+                </div>
+                <div class="links-item">
+                    <a href="./">Ver projeto</a>
+                    <a href="./3sa.com">Github</a>
+                </div>
+
+            </div> -->
+
+            </div>
+    </section>
     <section class="oque-faco all-wide section" id="oque-faco">
-        <div>
+        <div class="oq-faco-efeito">
             <h2>Oque eu faço?</h2>
         </div>
-        <div class="item"> </div>
-        <div class="job">
+        <div class="item oq-faco-efeito"> </div>
+        <div class="job serv-efeitos">
             <div class="job-item">
                 <img src="./icones/internet.svg" alt="">
                 <div>
@@ -130,46 +214,13 @@
         </div>
 
     </section>
-    <section class="projetos all-wide section" id="projetos">
-        <div>
-            <h2>Meus projetos</h2>
-        </div>
-        <div class="item"> </div>
-        <div class="projetos-container">
-            <div class="projetos-destaques">
-                <p>Destaques</p>
-                <div>
-
-                    <img src="./imagens/printscreen.png" alt="">
-                    <img src="./imagens/printscreen.png" alt="">
-                    <img src="./imagens/printscreen.png" alt="" class="destaq-no-active">
-                </div>
-            </div>
-            <div class="outros-projetos">
-                <p>Outros projetos</p>
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="">
-                <img src="./imagens/printscreen.png" alt="" class="">
-                <img src="./imagens/printscreen.png" alt="" class="no-active">
-                <img src="./imagens/printscreen.png" alt="" class="no-active">
-                <img src="./imagens/printscreen.png" alt="" class="no-active">
-                <img src="./imagens/printscreen.png" alt="" class="no-active">
-                <img src="./imagens/printscreen.png" alt="" class="no-active">
-                <img src="./imagens/printscreen.png" alt="" class="no-active">
-                <!-- <img src="./imagens/printscreen.png" alt="" class="no-active"> -->
-                <!-- <img src="./imagens/printscreen.png" alt="" class="no-active">
-                <img src="./imagens/printscreen.png" alt="" class="no-active"> -->
-            </div>
-        </div>
-        <!-- <a href="#" class="btn-global">></a> -->
-    </section>
     <section class="habilidades all-wide section" id="habilidades">
-        <div>
+        <div class="hab-efeitos">
             <h2>Minhas habilidades</h2>
         </div>
-        <div class="item"> </div>
-        <p class="texto-hab">Estou constantemente me atualizando e estudando para aprender novas tecnologias e aperfeiçoar outras.</p>
-        <div class="skills">
+        <div class="item hab-efeitos"> </div>
+        <p class="texto-hab txt-hab-efeitos">Estou constantemente me atualizando e estudando para aprender novas tecnologias e aperfeiçoar outras.</p>
+        <div class="skills hab-sk-efeitos">
             <div class="skills-item">
                 <img src="./icones/html.svg" alt="">
                 <p class="skills-titulo">HTML</p>
@@ -204,37 +255,44 @@
 
     </section>
     <section class="contato all-wide section" id="contato">
-        <div>
+        <div class="cntt-titulo-efeito">
             <h2>Contato</h2>
         </div>
         <!-- <div class="item"> </div> -->
         <div class="contato-container">
-            <div class="contato-dados">
+            <div class="contato-dados dados-efeito">
                 <ul>
-                    <li><img src="./icones/wpp.svg" alt=""><a href="tel:+5591982862938">(91) 982886-2938</a></li>
+                    <li><img src="./icones/wpp.svg" alt=""><a href="tel:+5591992701374">(91) 99270-1374</a></li>
                     <li><img src="./icones/email.svg" alt=""><a href="mailto:contato@riquelmepantoja.com">contato@riquelmepantoja.com</a></li>
                     <li><img src="./icones/github.svg" alt=""><a href="https://github.com/riquelme7x"">Github</a></li>
                     <li><img src=" ./icones/linkedin.svg" alt=""><a href="https://www.linkedin.com/in/riquelmepantoja">LinkedIn</a></li>
                 </ul>
             </div>
-            <div class="item item-2">
+            <div class="item item-2 item-efeito">
 
             </div>
 
-            <form action="./enviar.php" method="post" class="contato-formulario form" aria-label="Formulário">
+            <form action="./enviar.php" method="post" class="contato-formulario form form-efeito" aria-label="Formulário">
+                <h1 class="titulo-form">Envie uma mensagem</h1>
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
                 <label for="email">E-mail:</label>
                 <input type="email" name="email" id="email" placeholder="contato@email.com" required>
                 <label for="mensagem">Mensagem:</label>
                 <textarea name="mensagem" id="mensagem" rows="10" cols="20" placeholder="Sua mensagem..." required></textarea>
-                <button type="submit" class="btn-global btn-cntt">enviar</button>
+                <button class="btn-global btn-cntt">enviar</button>
             </form>
         </div>
     </section>
     <script src="./js/script.js"></script>
     <script src="./js/formulario.js"></script>
     <script src="./js/type.js" defer></script>
+    <script src="./js/light.js"></script>
+    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/reveal.js"></script>
+
+
 </body>
 
 </html>

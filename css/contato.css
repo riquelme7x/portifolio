@@ -11,6 +11,7 @@
     position: relative;
     gap: 60px;
     color: var(--p2);
+    transition: .5s
 }
 
 .contato h2 {
@@ -24,7 +25,9 @@
     /* margin-bottom: 70px; */
 }
 
-
+.contato.all-wide {
+    height: auto;
+}
 
 .contato h2::after {
     content: "CONTATO";
@@ -153,6 +156,38 @@
     transform: translatey(-25px);
 }
 
+.titulo-form {
+    font-size: 1.2rem !important;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+/* modo dark e light */
+
+body.dark .contato {
+    background-image: linear-gradient(to bottom, #d2ccd6, #c7bfcc, #bbb2c1, #b0a6b7, #a599ad);
+}
+
+body.dark .contato h2 {
+    color: var(--p7);
+}
+
+body.dark .contato .contato-container .contato-dados ul li a {
+    color: var(--p8);
+}
+
+body.dark .contato .contato-container form label {
+    color: var(--e1);
+}
+
+body.dark .contato .contato-container form h1 {
+    color: var(--e1);
+}
+
+/* fim do dark mode */
 @media (max-width: 1350px) {
     .contato h2 {
         font-size: 2.5rem;

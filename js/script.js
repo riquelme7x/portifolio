@@ -5,7 +5,7 @@ let sections = document.querySelectorAll(".section");
 window.addEventListener('scroll', () => {
     sections.forEach(section => {
         let top = window.scrollY;
-        let offset = section.offsetTop;
+        let offset = section.offsetTop - 70;
         let heightSection = section.offsetHeight;
         let idSection = section.getAttribute("id");
 
@@ -90,4 +90,3 @@ Itens6.addEventListener('click', toogleMenu);
 
 btnMobile.addEventListener('click', toogleMenu);
 btnMobile.addEventListener('touchstart', toogleMenu);
-
